@@ -11,7 +11,7 @@ import { Platform } from "./hooks/usePlatforms";
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
-  sortOrder: string | null;
+  sortOrder: string;
 }
 
 function App() {
