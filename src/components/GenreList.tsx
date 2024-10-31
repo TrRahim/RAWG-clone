@@ -2,7 +2,7 @@ import { Text, VStack } from "@chakra-ui/react";
 import { useGenres } from "../hooks/useGenres";
 
 const GenreList = () => {
-  const { genres, error, isLoading } = useGenres();
+  const { data: genres, error } = useGenres();
   return (
     <>
       {error && <Text>Genres was not found</Text>}
