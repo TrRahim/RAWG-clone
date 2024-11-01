@@ -1,4 +1,4 @@
-import { useData } from "./useDate";
+import platforms from "../data/platforms";
 
 export interface Platform {
   id: number;
@@ -6,4 +6,11 @@ export interface Platform {
   slug: string;
 }
 
-export const usePlatform = () => useData<Platform>("/platforms/lists/parents");
+export const usePlatform = () => {
+  const results = platforms.results;
+
+  return {
+    platforms: results,
+    error: false,
+  };
+};
