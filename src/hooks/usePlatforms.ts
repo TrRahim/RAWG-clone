@@ -16,7 +16,7 @@ export const usePlatform = () =>
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000,
     initialData: {
-      count: platforms.count,
+      count: platforms.results.length,
       results: platforms.results,
     },
   });
