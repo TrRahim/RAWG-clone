@@ -1,7 +1,7 @@
 import { Button, Text } from "@chakra-ui/react";
 import { useState } from "react";
 
-const ExpandableTex = ({ children }: { children: string }) => {
+const ExpandableText = ({ children }: { children: string }) => {
   const [expanded, setExpanded] = useState(false);
   const limit = 300;
 
@@ -26,4 +26,4 @@ const ExpandableTex = ({ children }: { children: string }) => {
   );
 };
 
-export default ExpandableTex;
+export default ExpandableText;
